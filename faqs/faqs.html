@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h1{
+	text-align:center;
+}
+body,html{
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:white;
+}
+.accordion {
+  background-color: #d9adad;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #84a9ac;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: left;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color:#b2bec3;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+header{
+      background-color: #666;
+      padding: 50px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+}
+footer{
+  text-align: center;
+  padding: 25px;
+  background-color: #666;
+  color: white;
+}
+.content{
+  background-color:#3b5249;
+}
+</style>
+</head>
+<body>
+<!--<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>-->
+<header>Frequently Asked Questions</header>
+<div class="content">
+<button class="accordion">What is Agro-Mate?</button>
+<div class="panel">
+  <p>Agro-Mate is a web-based portal designed to assist farmers....</p>
+</div>
+
+<button class="accordion">How to use Agro-Mate?</button>
+<div class="panel">
+  <p>Firstly, create an account at the sign up page. The various modules in the user page will help you understand the working. Feel free to contact us through the queries forum in the user page.</p>
+</div>
+
+<button class="accordion">How to create a new acount?</button>
+<div class="panel">
+  <p>If you do not have an account, click on the sign up button in the login page.<br>Enter the required details and you're good to go!</p>
+</div>
+
+<button class="accordion">What if I don't remember my UserId?</button>
+<div class="panel">
+  <p>We don't yet have a way to retrieve your lost UserId. We're working on that.<br>Meanwhile, feel free to explore our services by creating a new account with a dfferent UserId. Inconvenience regretted.</p>
+</div>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+<footer>Copyrights issued<br>Contact: juloori.sravika654@gmail.com<br>hruthikaeedupuganti20@gmail
+</footer>
+</body>
+</html>
