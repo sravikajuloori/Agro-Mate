@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 100%;
+  margin: 0;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row, .row > .column1, .row > .column2 {
+  padding: 15px;
+}
+
+/* Create columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 25%;
+}
+
+.column2{
+  float:left;
+  width:50%;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left{
+	width:80%;
+}
+
+.right{
+	width:20%
+}
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: mistyrose;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border: 2px solid black;
+  padding: 0;
+}
+
+.column2 img{
+  width:100%;
+  height:300px;
+}
+
+.column1 img{
+  width:100%;
+  height:200px;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column1 {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1, .column2 {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<marquee>Latest Updates on agriculture, farming, tech-farming, policies, facts, etc.</marquee>
+<div class="column left">
+	
+
+<div class="main">
+
+<div class="row">
+	<div class="column2">
+		<div class="content">
+			<img src="..\..\..\..\images\traditional_and_modern_agri.jpg" alt="Modern Farming vs Traditional Farming">
+			<p>&nbsp;Modern Farming vs Traditional Farming.</p>
+		</div>
+	</div>
+	  
+	<div class="column2">
+		<div class="content">
+			<img src="..\..\..\..\images\production_comparision.png" alt="Comparative yield of India over other leading Countries">
+			<p>&nbsp;Comparative yield of India over other leading farming Countries.</p>
+		</div>
+	</div>
+
+	<div class="column1">
+		<div class="content">
+			<img src="..\..\..\..\images\ministry_of_agri.jpg" alt="Ministry of Agriculture and Farmers Welfare, Government of India">
+			<p>&nbsp;The rule-formulation and &nbsp;administrative body of Indian &nbsp;agriculture.</p>
+		</div>
+	</div>
+
+	<div class="column1">
+		<div class="content">
+			<img src="..\..\..\..\images\robot_uses_ml_to_harvest_lettuce.jpg" alt="Robot uses ML to harvest lettuce">
+			<p>&nbsp;Image of a robot using &nbsp;Machine Learning technology &nbsp;to harvest lettuce in a field.</p>
+		</div>
+	</div>
+	
+	<div class="column1">
+		<div class="content">
+			<img src="..\..\..\..\images\doubling_income.jpg" alt="National Conference in 2022 to double farmers' income">
+			<p>&nbsp;National Conference to be &nbsp;held in 2022 to double the &nbsp;farmers' income.</p>
+		</div>
+	</div>
+	
+	<div class="column1">
+		<div class="content">
+			<img src="..\..\..\..\images\farmbot.jpg" alt="Farm-bot performing farming activities">
+			<p>&nbsp;Image of a farm-bot doing &nbsp;farming activities without &nbsp;human interference.</p>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div class="column right">
+<h2>Buzzing facts</h2>
+<p>1. About 60% to 70% of India's population depend upon agriculture for their 
+livelihood. The nation salutes you!</p>
+<p>2. India has the 2nd largest agricultural output in the world, and as of 
+2013, it is the 7th largest exporter of agricultural goods.</p>
+<p>3. Statistics show that the net foreign earnings from agricultureare at par with 
+the IT sector, as of 2013.</p>
+<p>4. States which make a substantial contribution to the agricultural industry 
+of the country are West Bengal, Uttar Pradesh, Maharashtra, Andhra Pradesh, Bihar, 
+Haryana, Madhya Pradesh and Punjab.</p>
+<p>5. Uttar Pradesh is the largest agricultural contributor of India. It has a 
+cultivation area of 16.68 million hectares (around 76% of its total land area).</p>
+
+</div>
+
+</body>
+</html>
