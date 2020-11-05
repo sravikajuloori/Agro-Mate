@@ -1,0 +1,153 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.navbar .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #333;
+  font-family: inherit;
+  margin: 0;
+}
+
+.subdrop-btn{
+	font-size: 16px;  
+    border: none;
+    outline: none;
+	color: black;
+	font-family: inherit;
+    margin: 0;
+	background-color: #f9f9f9;
+	padding: 12 70 12 16;
+}
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+.navbar button:hover{
+  background-color: green;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width:165px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.subdropdown-content{
+	display: none;
+	position: absolute;
+	left:163px;
+	top:40px;
+	background-color: #f9f9f9;
+	width:140px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content  a{
+  position: relative;
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align:left;
+}
+
+.subdropdown-content a{
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align:left;
+  padding-left:12 16 12 30;
+}
+
+.dropdown-content  a:hover, .subdrop-btn:hover{
+  background-color: mistyrose;
+}
+
+.subdropdown-content a:hover{
+  background-color:cyan;
+}
+
+.dropdown:hover .dropdown-content, .dropdown-content li:hover .subdropdown-content{
+  display: block;
+}
+
+</style>
+</head>
+
+<body>
+<h1 style="text-align:center;">Updates ~ To Keep You Upto Date</h1>
+<div class="navbar">
+	<div class="dropdown">
+		<button class="dropbtn"> Latest Tecnologies 
+        <i class="fa fa-caret-down"></i> <!-- for the dropdown arrow -->
+		</button>
+		<div class="dropdown-content">
+		<ul>
+			<li> <a href="tech_updates/drones.html" target="updates_iframe">Drones</a> </li>
+			<li> <a href="tech_updates/driverless_tractors.html" target="updates_iframe">Driverless Tractors</a> </li>
+		</ul>
+		</div>
+	</div> 
+	
+	<div class="dropdown">
+		<button class="dropbtn">Government Policies and Subsidies 
+		<i class="fa fa-caret-down"></i> <!-- for the dropdown arrow -->
+		</button>
+		<div class="dropdown-content" >
+		<ul >
+			<li> <a href="policies_updates/info.html" target="updates_iframe">National level</a> </li>
+			<li> <button class="subdrop-btn">State level <i class="fa fa-caret-right"></i> </button>
+			<div class="subdropdown-content">
+			<ul> 
+				<li><a href="policies_updates/info.html" target="updates_iframe">Telangana</a></li>
+				<li><a href="policies_updates/info.html" target="updates_iframe">Andhra Pradesh</a></li>
+			</ul>
+			</div>
+			</li>
+		</ul>
+		</div>
+	</div>
+    
+	<button class="dropbtn" style="float:right;padding:0px;"><a href="../../user_page.php">Go Back</a></button>
+</div>
+<iframe src="updates_home_design.html" name="updates_iframe" height="100%" width="100%" title="iframe"></iframe>
+
+</body>
+
+</html>
